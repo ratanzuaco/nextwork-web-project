@@ -1,30 +1,30 @@
 <settings>
 <servers>
   <server>
-    <id>nextwork-myCArtRepo</id>
+    <id>nextwork-my_codeart_repo</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
 </servers>
 <profiles>
   <profile>
-    <id>nextwork-myCArtRepo</id>
+    <id>nextwork-my_codeart_repo</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>nextwork-myCArtRepo</id>
-        <url>https://nextwork-683870053280.d.codeartifact.us-east-1.amazonaws.com/maven/myCArtRepo/</url>
+        <id>nextwork-my_codeart_repo</id>
+        <url>https://nextwork-683870053280.d.codeartifact.us-east-2.amazonaws.com/maven/my_codeart_repo/</url>
       </repository>
     </repositories>
   </profile>
 </profiles>
 <mirrors>
   <mirror>
-    <id>nextwork-myCArtRepo</id>
-    <name>nextwork-myCArtRepo</name>
-    <url>https://nextwork-683870053280.d.codeartifact.us-east-1.amazonaws.com/maven/myCArtRepo/</url>
+    <id>nextwork-my_codeart_repo</id>
+    <name>nextwork-my_codeart_repo</name>
+    <url>https://nextwork-683870053280.d.codeartifact.us-east-2.amazonaws.com/maven/my_codeart_repo/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
